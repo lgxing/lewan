@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+    
+    
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#2adddd"
+        android:gravity="center"
+        android:padding="7dp" >
+       <ImageView
+            android:id="@+id/frag_msg_menu"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@drawable/menu" />
+        <TextView 
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="消息室"
+            android:textSize="20sp"
+            android:textColor="#ffffff"
+            />
+       <View 
+           android:layout_width="35dp"
+           android:layout_height="35dp"
+           />
+        
+    </LinearLayout>
+    
+    <ListView 
+        android:id="@+id/fragment_msg_lv"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none"
+        android:layout_margin="10dp"
+        />
+   
+</LinearLayout>
